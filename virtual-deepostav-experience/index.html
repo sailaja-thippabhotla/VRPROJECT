@@ -1,0 +1,392 @@
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script> -->
+
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .parentBox {
+        top: 0;
+        width: 75%;
+        /* border: 1px solid red; */
+        height: auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .boxImg {
+        width: 75%;
+        /* display: block;
+        margin: 0 auto; */
+
+        position: absolute;
+        left: 50%;
+        top: 0px;
+        transform: translateX(-50%);
+    }
+
+    .heading {
+        width: 100%;
+    }
+
+    .main-heading {
+        display: block;
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .DivWrapper {
+        /* border: 1px solid black; */
+        width: 88%;
+        display: flex;
+        margin: -45px auto;
+    }
+
+
+    .col1 {
+        width: 33.33%;
+    }
+
+    .col2 {
+        width: 33.33%;
+    }
+
+    .col3 {
+        width: 33.33%;
+    }
+
+    .col-img {
+        width: 100%
+    }
+
+    .col-img>img {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .divider {
+        width: 3.5%;
+    }
+
+    .divider>img {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .diyaCmn>img {
+        margin: 0 auto;
+        display: block;
+        width: 55%;
+    }
+
+    .oilCmn>img {
+        margin: 0 auto;
+        display: block;
+        width: 55%;
+    }
+
+    .handCmn>img {
+        margin: 0 auto;
+        display: block;
+        width: 55%;
+    }
+
+    img {
+        cursor: pointer;
+    }
+
+    .submitContainer {
+        width: 100%;
+    }
+
+
+    .submitContainer>img {
+        width: 30%;
+        margin-top: 45px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        display: block;
+    }
+
+    .backgroundPrs {
+        /* width: 100%; */
+        background-image: url("diwali-up/3-bg.jpg");
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+
+    @media only screen and (max-width: 1023px) {
+        .boxImg {
+            width: 100%;
+        }
+
+        .parentBox {
+            width: 100%;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .boxImg {
+            margin: 0;
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    }
+</style>
+
+
+
+<body>
+    <!-- <img class="backgroundPrs" src="diwali-up/3-bg.jpg" /> -->
+    <div class="backgroundPrs"></div>
+    <div class="container">
+        <img class="boxImg" src="diwali-up/bg-paper.png" />
+        <div class="parentBox">
+            <div class="heading">
+                <img class="main-heading" src="diwali-up/main-heading.png" />
+            </div>
+            <div class="DivWrapper">
+                <div class="col1">
+                    <div class="col1-heading col-img">
+                        <img src="diwali-up/coloumn-1-heading.png" />
+                    </div>
+                    <div class="diyaGrp">
+                        <div class="diya1 diyaCmn" selectBox="1">
+                            <img src="diwali-up/diya-1-without-tic.png" />
+                        </div>
+                        <div class="diya2 diyaCmn" selectBox="2">
+                            <img src="diwali-up/diya-2-without-tic.png" />
+                        </div>
+                        <div class="diya3 diyaCmn" selectBox="3">
+                            <img src="diwali-up/diya-3-without-tic.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <img src="diwali-up/Line-1.png" />
+                </div>
+                <div class="col2">
+                    <div class="col2-heading col-img">
+                        <img src="diwali-up/coloumn-2-heading.png" />
+                    </div>
+                    <div class="oilGrp">
+                        <div class="oil1 oilCmn" selectBox="1">
+                            <img src="diwali-up/ghee-1-without-tic.png" />
+                        </div>
+                        <div class="oil2 oilCmn" selectBox="2">
+                            <img src="diwali-up/ghee-2-without-tic.png" />
+                        </div>
+                        <div class="oil3 oilCmn" selectBox="3">
+                            <img src="diwali-up/ghee-3-without-tic.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <img src="diwali-up/line-2.png" />
+                </div>
+                <div class="col3">
+                    <div class="col3-heading col-img">
+                        <img src="diwali-up/coloumn-3-heading.png" />
+                    </div>
+                    <div class="handGrp">
+                        <div class="hand1 handCmn" selectBox="1">
+                            <img src="diwali-up/hand-1-without-tic.png" />
+                        </div>
+                        <div class="hand2 handCmn" selectBox="2">
+                            <img src="diwali-up/hand-2-without-tic.png" />
+                        </div>
+                        <div class="hand3 handCmn" selectBox="3">
+                            <img src="diwali-up/hand-3-without-tic.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submitContainer">
+                <img src="screen-3-button.png">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<script>
+    var checkPattern = [0, 0];
+    var videoSrc = [
+        "https://up-government-diwali.s3.ap-south-1.amazonaws.com/Output_Male/Male_Brass.mov",
+        "https://up-government-diwali.s3.ap-south-1.amazonaws.com/Output_Male/Male_Copper.mov",
+        "https://up-government-diwali.s3.ap-south-1.amazonaws.com/Output_Male/Male_Mitti.mov",
+        "https://up-government-diwali.s3.ap-south-1.amazonaws.com/Output/Female_Brass.mov",
+        "https://up-government-diwali.s3.ap-south-1.amazonaws.com/Output/Female_Copper.mov",
+        "https://up-government-diwali.s3.ap-south-1.amazonaws.com/Output/Female_Mitti.mov",
+        "https://up-government-diwali.s3.ap-south-1.amazonaws.com/Output/Other_Brass.mov",
+        "https://up-government-diwali.s3.ap-south-1.amazonaws.com/Output/Other_Copper.mov",
+        "https://up-government-diwali.s3.ap-south-1.amazonaws.com/Output/Other_Mitti.mov"
+    ];
+    $(document).ready(function () {
+        init();
+    });
+    function init() {
+        $(".diyaCmn").off('click').on('click', diyaBoxFn);
+        $(".oilCmn").off('click').on('click', oilBoxFn);
+        $(".handCmn").off('click').on('click', handBoxFn);
+    }
+
+    function diyaBoxFn() {
+        $(".diyaCmn img").html("");
+        $(".diyaCmn").each(function (index) {
+            if ($(this).attr("selectBox") == (index + 1).toString()) {
+                var addVal = parseInt(index) + 1;
+                $(this).find("img").attr("src", "diwali-up/diya-" + addVal + "-without-tic.png");
+            }
+        });
+
+        if ($(this).attr("selectBox") == "1") {
+            $(this).find("img").attr("src", "diwali-up/diya1-with-tic.png");
+        } else if ($(this).attr("selectBox") == "2") {
+            $(this).find("img").attr("src", "diwali-up/diya2-with-tic.png");
+        } else if ($(this).attr("selectBox") == "3") {
+            $(this).find("img").attr("src", "diwali-up/diya3-with-tic.png");
+        }
+        $(this).parent().attr("selection", "true");
+        checkPattern[0] = $(this).attr("selectBox");
+    }
+
+    function oilBoxFn() {
+        $(".oilCmn img").html("");
+        $(".oilCmn").each(function (index) {
+            if ($(this).attr("selectBox") == (index + 1).toString()) {
+                var addVal = parseInt(index) + 1;
+                $(this).find("img").attr("src", "diwali-up/ghee-" + addVal + "-without-tic.png");
+            }
+        });
+
+        if ($(this).attr("selectBox") == "1") {
+            $(this).find("img").attr("src", "diwali-up/ghee-1-with-tic.png");
+        } else if ($(this).attr("selectBox") == "2") {
+            $(this).find("img").attr("src", "diwali-up/ghee-2-with-tic.png");
+        } else if ($(this).attr("selectBox") == "3") {
+            $(this).find("img").attr("src", "diwali-up/ghee-3-with-tic.png");
+        }
+        $(this).parent().attr("selection", "true");
+    }
+
+    function handBoxFn() {
+        $(".handCmn img").html("");
+        $(".handCmn").each(function (index) {
+            if ($(this).attr("selectBox") == (index + 1).toString()) {
+                var addVal = parseInt(index) + 1;
+                $(this).find("img").attr("src", "diwali-up/hand-" + addVal + "-without-tic.png");
+            }
+        });
+
+        if ($(this).attr("selectBox") == "1") {
+            $(this).find("img").attr("src", "diwali-up/hand-1-with-tic.png");
+        } else if ($(this).attr("selectBox") == "2") {
+            $(this).find("img").attr("src", "diwali-up/hand-2-with-tic.png");
+        } else if ($(this).attr("selectBox") == "3") {
+            $(this).find("img").attr("src", "diwali-up/hand-3-with-tic.png");
+        }
+        $(this).parent().attr("selection", "true");
+        checkPattern[1] = $(this).attr("selectBox");
+    }
+
+    $(".submitContainer img").off('click').on('click', submitBtn);
+
+    function submitBtn() {
+        // console.log(".................................")
+        // console.log(checkPattern.join());
+        // console.log(".................................")
+        // return;
+        if ($('.oilCmn').parent().attr("selection") == "true") {
+            if ($('.diyaCmn').parent().attr("selection") == "true") {
+
+            } else {
+
+                alert("please select the given checkbox field");
+                return;
+            }
+
+
+            if ($('.handCmn').parent().attr("selection") == "true") {
+
+            } else {
+                alert("please select the given checkbox field");
+                return;
+            }
+
+            console.log(".................................")
+            console.log(checkPattern.join(""));
+            var checkPatternVal = checkPattern.join("");
+            // console.log(typeof (checkPattern.join("")))
+            console.log(".................................")
+
+
+
+
+
+            if (checkPatternVal == "11") {
+
+
+            } else if (checkPatternVal == "12") {
+
+            } else if (checkPatternVal == "13") {
+
+            } else if (checkPatternVal == "21") {
+
+            } else if (checkPatternVal == "22") {
+
+            } else if (checkPatternVal == "23") {
+
+            } else if (checkPatternVal == "31") {
+
+            } else if (checkPatternVal == "32") {
+
+            } else if (checkPatternVal == "33") {
+
+            }
+
+        } else {
+
+            alert("please select the give checkbox field");
+            return;
+        }
+
+
+
+
+    }
+
+
+
+</script>
